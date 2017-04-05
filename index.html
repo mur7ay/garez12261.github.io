@@ -1,160 +1,215 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
 
-.background1, .backaground2, .background3, .background4 {
-  position: relative;
-  opacity: 0.85;
-  background-position: center;
-  background-size: cover;
+        .email-form {
+            padding-top: 200px;
+        }
 
-}
-.background1 {
-  background-image: url("photos/ppt1.jpg");
-  min-height: 100%;
-}
+        #email-form {
+            width: 450px;
+            height: 30px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #FFF;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
 
-.background2 {
-  background-image: url("photos/ppt2.jpg");
-  min-height: 100%;
-}
+        #email-button {
+            width: 475px;
+            height: 50px;
+            border-style: solid;
+            border-radius: 10px;
+            font-size: 18px;
+            display: block;
+            background-color: #81FF33;
+            border-color: #81FF33;
+            color: #FFF;
+            margin: 20px auto;
+        }
 
-.background3 {
-  background-image: url("photos/ppt3.jpg");
-  min-height: 100%;
-}
+        #email-button:hover {
+          background-color: green;
+          border-color: green;
+        }
 
-.background4 {
-  background-image: url("photos/ppt4.jpg");
-  min-height: 100%;
-}
+        .background1,
+        .backaground2,
+        .background3,
+        .background4 {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
 
+        .background1 {
+            background-image: url("photos/background.jpg");
+            min-height: 100%;
+            padding-top: 160px;
+        }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-</style>
+        .background2 {
+            width: 100%;
+            height: 550px;
+        }
+
+        .background3 {
+            background-image: url("photos/ppt3.jpg");
+            min-height: 100%;
+            clear: both;
+        }
+
+        .background4 {
+            background-image: url("photos/ppt4.jpg");
+            min-height: 100%;
+        }
+
+        .phone-container {
+            width: 33.33%;
+            float: left;
+        }
+
+        #screenshots {
+            width: 300px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h3 {
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            font: 20px "Lato", sans-serif;
+            color: #111;
+        }
+
+        .team-row {
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 10px;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-
-<div class=" background1">
-
-</div>
-
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Comki's Vision</h3>
-  <p> Being part of a community means being part of something bigger. By unifying our dreams and finding our "moments," our combined efforts can invoke the change we've long searched for... "Even if we're off by a hare."
-  Create, Discover, and Experience communities like never before using Augmented Reality.
-  <br>
-  <br>
-  <center>
-  Comki is that call to <strong>ADVENTURE! </strong>
-  </center>
-  </p>
-</div>
-
-<div class="background2">
-
-</div>
+    <div class=" background1">
+        <div class="email-form">
+          <!-- <form onsubmit="return submit(this)"> -->
+            <input id="email-form" type="text" name="email" placeholder="Enter your email.. eg., John@google.com" required />
+            <button id="email-button" onclick="submit()">SUBMIT</button>
+          <!-- </form> -->
+        </div>
+    </div>
 
 
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3>Comki's Vision</h3>
+        <p> Being part of a community means being part of something bigger. By unifying our dreams and finding our "moments," our combined efforts can invoke the change we've long searched for... "Even if we're off by a hare." Create, Discover, and Experience
+            communities like never before using Augmented Reality.
+            <br>
+            <br>
+            <center>
+                Comki is that call to <strong>ADVENTURE! </strong>
+            </center>
+        </p>
+    </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-
-  <p> 
-  <br>
-  <br>
-
-  </p>
-</div>
-
-
-<div class="background3">
-
-</div>
-
-<div style="position:relative;">
-  <div style="color:#777;background-color:#white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">The Comki Team</h3>
-  <p> 
-  <br>
-  <br>
-   &emsp; &emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2119774">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2978740">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2929217">
-		<img class="team member" src="photos/silhouette2.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2505112">
-		<img class="team member" src="photos/silhouette2.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	
-	<h4>  &emsp; &emsp; &emsp; &emsp; &emsp;&emsp; Immanuel &emsp;  &emsp; &emsp; &emsp; &emsp; Erik  &emsp; &emsp; &emsp;  &emsp; &emsp; &emsp; Kaitlin
-	&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  Alexa  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-	
-	</h4>
-	 
-
-	 
-	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2712758">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/899264">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/2520863">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	<a href="https://isearch.asu.edu/profile/851590">
-		<img class="team member" src="photos/silhouette1.jpg"  alt="user1" style="width:120px;height:120px;">
-	</a>
-	&emsp;&emsp;
-	
-	
-	<h4>  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-	Shawn   &emsp; &emsp; &emsp; &emsp; &ensp; &emsp; David
-	&emsp; &emsp; &emsp; &emsp; &emsp; &emsp;  Andy &emsp; &emsp; &emsp; &emsp; &emsp;   &emsp;  Gardel 
-	
-	</h4>
+    <div class="background2">
+        <div class="phone-container">
+            <img src="photos/ppt2.png" id="screenshots" />
+        </div>
+        <div class="phone-container">
+            <img src="photos/ppt3.png" id="screenshots" />
+        </div>
+        <div class="phone-container">
+            <img src="photos/ppt4.png" id="screenshots" />
+        </div>
+    </div>
 
 
+    <div class="background3">
 
-  <br>
-  <br>
+    </div>
 
-  
-  </p>
-  </div>
-</div>
+    <div style="background-color:#d7dbdd;text-align:center;padding:50px 80px;text-align: justify; margin-top: 60px;">
+        <h3>The Comki Team</h3>
 
-<a href="mailto:immanuelmalone1@gmail.com"> 
-  <div class="background4">
-</div>
-</a>
+        <div class="team-row">
+            <a href="https://isearch.asu.edu/profile/2119774">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/2978740">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/2929217">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/2505112">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+        </div>
+
+        <!-- <h4>Immanuel Erik Kaitlin Alexa </h4> -->
+
+        <div class="team-row">
+            <a href="https://isearch.asu.edu/profile/2712758">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/899264">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/2520863">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+            &emsp;&emsp;
+            <a href="https://isearch.asu.edu/profile/851590">
+                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+            </a>
+        </div>
+        <!-- <h4>Shawn David Andy Gardel</h4> -->
+    </div>
+
+    <a href="mailto:immanuelmalone1@gmail.com">
+        <div class="background4">
+        </div>
+    </a>
+
+    <!-- Connecting Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDH5n1DQkwjBHa7D8Kr9tRfkg6JDlP4HmY",
+            authDomain: "comki-2f5dd.firebaseapp.com",
+            databaseURL: "https://comki-2f5dd.firebaseio.com",
+            projectId: "comki-2f5dd",
+            storageBucket: "comki-2f5dd.appspot.com",
+            messagingSenderId: "583398830341"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- Linking the JS -->
+    <script src="index.js"></script>
 
 </body>
+
 </html>
