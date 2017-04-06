@@ -41,8 +41,8 @@
         }
 
         #email-button:hover {
-          background-color: green;
-          border-color: green;
+            background-color: green;
+            border-color: green;
         }
 
         .background1,
@@ -63,11 +63,13 @@
         .background2 {
             width: 100%;
             height: 550px;
+            margin-bottom: 30px;
         }
 
         .background3 {
-            background-image: url("photos/ppt3.jpg");
-            min-height: 100%;
+            /*background-image: url("photos/ppt3.jpg");*/
+            height: 550px;
+            margin-top: 30px;
             clear: both;
         }
 
@@ -93,6 +95,11 @@
             text-align: center;
             font: 20px "Lato", sans-serif;
             color: #111;
+            text-align: center;
+        }
+
+        p {
+          text-align: center;
         }
 
         .team-row {
@@ -108,10 +115,8 @@
 
     <div class=" background1">
         <div class="email-form">
-          <!-- <form onsubmit="return submit(this)"> -->
             <input id="email-form" type="text" name="email" placeholder="Enter your email.." required />
             <button id="email-button" onclick="submit()">SUBMIT</button>
-          <!-- </form> -->
         </div>
     </div>
 
@@ -133,31 +138,39 @@
             <img src="photos/ppt2.png" id="screenshots" />
         </div>
         <div class="phone-container">
-            <img src="photos/ppt3.png" id="screenshots" />
+            <img src="photos/ppt3.png" id="screenshots" style="width:308px;" />
         </div>
         <div class="phone-container">
             <img src="photos/ppt4.png" id="screenshots" />
         </div>
     </div>
 
-    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <div style="color: #494949;background-color:#daa211; text-align:center; padding:50px 80px; text-align: justify;">
         <p>
-		<br>
-		Unlike current platforms where you are expected to conform to the network,
-		we empower you to discover the world through your own eyes.
-		With the help of Augmented Reality, you can discover, interact with post,
-		earn in-app rewards called Comki Go! Points, and express your connections with visuals and multimedia options never seen in the space before. 
-		Once you Signup, you can start your friendly competition and quench your thirst for adventure with in app achievements and others ways to help you be YOU!
-        <br>
-		<br>
-
+            <br> Unlike current platforms where you are expected to conform to the network, we empower you to discover the world through your own eyes. With the help of Augmented Reality, you can discover, interact with post, earn in-app rewards called Comki
+            Go! Points, and express your connections with visuals and multimedia options never seen in the space before. Once you Signup, you can start your friendly competition and quench your thirst for adventure with in app achievements and others
+            ways to help you be YOU!
+            <br>
+            <br>
         </p>
     </div>
-	
-	
-    <div class="background3">
 
+    <div class="background3">
+        <div class="phone-container">
+            <img src="photos/ppt5.jpg" id="screenshots" />
+        </div>
+        <div class="phone-container">
+            <img src="photos/ppt6.jpg" id="screenshots" />
+        </div>
+        <div class="phone-container">
+            <img src="photos/ppt7.jpg" id="screenshots" />
+        </div>
     </div>
+
+
+    <!-- <div class="background3">
+
+    </div> -->
 
     <div style="background-color:#d7dbdd;text-align:center;padding:50px 80px;text-align: justify; margin-top: 60px;">
         <h3>The Comki Team</h3>
