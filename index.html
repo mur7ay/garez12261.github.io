@@ -12,7 +12,7 @@
         }
 
         .email-form {
-          margin-top: 30px;
+            margin-top: 30px;
         }
 
         #email-form {
@@ -34,15 +34,15 @@
             border-radius: 5px;
             font-size: 18px;
             display: block;
-            background-color: #daa211;
-            border-color: #daa211;
+            background-color: #34D176;
+            border-color: #34D176;
             color: #FFF;
             margin: 20px auto;
         }
 
         #email-button:hover {
-            background-color: #FCD155;
-            border-color: #FCD155;
+            background-color: #76D59E;
+            border-color: #76D59E;
         }
 
         .background1,
@@ -56,8 +56,14 @@
 
         .background1 {
             background-image: url("photos/background2.jpg");
-            min-height: 100%;
+            height: 500px;
             padding-top: 160px;
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 450px) {
+            .background1 {
+                background-image: 100%;
+            }
         }
 
         .background2 {
@@ -74,9 +80,15 @@
         }
 
         .background4 {
-            background-image: url("photos/picture3.png");
-            min-height: 100%;
+            background-image: url("photos/squad.jpg");
             text-align: center;
+        }
+
+        #comki-logo {
+            margin-top: 200px;
+            width: 400px;
+            display: block;
+            margin: 0 auto;
         }
 
         .phone-container {
@@ -103,6 +115,15 @@
             text-align: center;
         }
 
+        .team-container {
+            background-color: #d7dbdd;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+            margin-top: 60px;
+            clear: both;
+        }
+
         .team-row {
             width: 50%;
             margin: 0 auto;
@@ -110,28 +131,106 @@
             text-align: center;
         }
 
+        .team-member {
+            width: 120px;
+            height: 120px;
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 850px) {
+            .team-row {
+                width: 100%;
+                margin: auto 0;
+            }
+            .team-member {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
         #contactBtn {
-          background-color: #daa211;
-          width: 300px;
-          height: 50px;
-          border-style: none;
-          border-radius: 5px;
-          font-size: 18px;
-          color: #fff;
+            background-color: #34D176;
+            width: 300px;
+            height: 50px;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #fff;
         }
 
         #contactBtn:hover {
-          background-color: #FCD155;
+            background-color: #76D59E;
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 500px) {
+            #email-form {
+                width: 260px;
+            }
+            #email-button {
+                width: 284px;
+            }
+            #comki-logo {
+                width: 350px;
+                display: block;
+                margin: 0 auto;
+            }
+            .phone-container {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .background2 {
+                height: 1700px;
+            }
+            .background4 #comki-logo {
+                margin-top: 40px;
+                width: 260px;
+            }
+            .background4 {
+                font-size: 14px;
+                color: #FFF;
+            }
+            .background4 button {
+                margin-bottom: 60px;
+            }
+            .team-container h3 {
+                font-size: 18px;
+            }
+            .team-row {
+                width: 100%;
+            }
+            .team-member {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 850px) {
+            #screenshots {
+                width: 200px;
+            }
+            .background2 {
+                height: 400px;
+            }
+            .background3 {
+                height: 380px;
+            }
+            .team-container h3 {
+                font-size: 26px;
+            }
         }
     </style>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3221632.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </head>
 
 <body>
 
     <div class="background1">
-        <img src="photos/comkilogo.png" alt="An image of the Comki logo" style="width: 600px; display:block; margin: 0 auto;" />
+        <img src="photos/comkilogo.png" alt="An image of the Comki logo" id="comki-logo" />
         <div class="email-form">
-            <input id="email-form" type="text" name="email" placeholder="Enter your email.." required />
+            <input id="email-form" type="text" name="email" placeholder="Enter your email.." required="required" />
             <button id="email-button" onclick="submit()"><strong>SUBMIT</strong></button>
         </div>
     </div>
@@ -154,7 +253,7 @@
             <img src="photos/ppt2.png" id="screenshots" />
         </div>
         <div class="phone-container">
-            <img src="photos/ppt3.png" id="screenshots" style="width:308px;" />
+            <img src="photos/ppt3.png" id="screenshots" />
         </div>
         <div class="phone-container">
             <img src="photos/ppt4.png" id="screenshots" />
@@ -183,29 +282,24 @@
         </div>
     </div>
 
-
-    <!-- <div class="background3">
-
-    </div> -->
-
-    <div style="background-color:#d7dbdd;text-align:center;padding:50px 80px;text-align: justify; margin-top: 60px;">
+    <div class="team-container">
         <h3>The Comki Team</h3>
 
         <div class="team-row">
             <a href="https://isearch.asu.edu/profile/2119774">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/2978740">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/2929217">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/2505112">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
         </div>
 
@@ -213,19 +307,19 @@
 
         <div class="team-row">
             <a href="https://isearch.asu.edu/profile/2712758">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/899264">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/2520863">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
             &emsp;&emsp;
             <a href="https://isearch.asu.edu/profile/851590">
-                <img class="team-member" src="photos/silhouette.png" alt="user1" style="width:120px;height:120px;">
+                <img class="team-member" src="photos/silhouette.png" alt="user1">
             </a>
         </div>
         <!-- <h4>Shawn David Andy Gardel</h4> -->
@@ -233,9 +327,11 @@
 
 
     <div class="background4" style="overflow: hidden;">
-        <img src="photos/comkilogo.png" atl="Comki's logo" style="width: 400px; display: block; margin: 0 auto; margin-top: 200px;" />
-        <h2 style="font-size: 40px; color: #FFF;">Where does your adventure begin?</h2>
-        <a href="mailto:immanuelmalone1@gmail.com"><button id="contactBtn"><img src="photos/logo.png" style="width: 40px; padding-right: 10px; vertical-align: middle;" /><strong>Contact Us</strong></button></a>
+        <img src="photos/comkilogo.png" atl="Comki's logo" id="comki-logo" />
+        <h2>Where does your adventure begin?</h2>
+        <a href="mailto:immanuelmalone1@gmail.com">
+            <button id="contactBtn"><img src="photos/logo.png" style="width: 40px; padding-right: 10px; vertical-align: middle;" /><strong>Contact Us</strong></button>
+        </a>
     </div>
 
 
